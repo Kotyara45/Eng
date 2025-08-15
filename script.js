@@ -61,7 +61,6 @@ function nextQuestion() {
   let answers = new Set();
   answers.add(correctAnswer);
 
-  // додаємо випадкові варіанти з рівня
   while (answers.size < 5) {
     const randomWord = currentLevelWords[Math.floor(Math.random() * currentLevelWords.length)].ukr;
     answers.add(randomWord);
