@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Англійсько-український тренажер</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen">
+  <h1>Англійсько-український тренажер</h1>
+  <p>Виберіть рівень складності:</p>
+  <button class="btn" onclick="startGame('easy')">Легкий</button>
+  <button class="btn" onclick="startGame('medium')">Середній</button>
+  <button class="btn" onclick="startGame('hard')">Важкий</button>
+</div>
+
+<div id="gameScreen" class="hidden">
+  <div id="timer">60</div>
+  <div class="question" id="question"></div>
+  <div class="answers" id="answers"></div>
+</div>
+
+<div id="statsScreen" class="hidden">
+  <h2>Статистика</h2>
+  <p>Правильні: <span id="correctCount"></span></p>
+  <p>Неправильні: <span id="wrongCount"></span></p>
+  <p>Відсоток: <span id="accuracy"></span>%</p>
+  <button class="btn" onclick="showStartScreen()">Почати знову</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
