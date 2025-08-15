@@ -116,8 +116,3 @@ function endGame() {
   document.getElementById("wrongCount").textContent = wrong;
   document.getElementById("accuracy").textContent = ((correct / (correct + wrong)) * 100).toFixed(1);
 }
-
-  document.getElementById("correctCount").textContent = correct;
-  document.getElementById("wrongCount").textContent = wrong;
-  document.getElementById("accuracy").textContent = ((correct / (correct + wrong)) * 100).toFixed(1);
-}
